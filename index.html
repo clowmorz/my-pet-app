@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>我的電子小寵物</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="start-screen" class="active">
+        <img src="title_enter.png" class="ui-title"> 
+        <img src="pet_shake.png" class="pet-shake" id="start-pet">
+    </div>
+
+    <div id="login-container">
+    <div class="login-box">
+        <img src="your_image_1.png" id="deco-1" class="login-deco-img"> 
+        <img src="your_image_2.png" id="deco-2" class="login-deco-img">
+
+        <div class="input-item" id="name-item">
+            <img src="label_name.png" alt="Name"> 
+            <input type="text" id="username">
+        </div>
+
+        <div class="input-item" id="password-item">
+            <img src="label_password.png" alt="Password"> 
+            <input type="password" id="password" maxlength="4">
+        </div>
+        
+        <img src="btn_arrow.png" id="login-btn" class="clickable">  
+    </div>
+</div>
+    <div id="room-container">
+        <img src="momo_logo.png" id="momo-logo" class="room-ui-text">
+        <img src="time_label.png" id="time-btn" class="room-ui-text">
+
+        <img src="r_00.png" class="room-bg">
+
+        <img src="c_00.png" id="main-pet" class="room-pet">
+</div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
